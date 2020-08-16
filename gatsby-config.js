@@ -1,5 +1,5 @@
 require('dotenv').config({
-  path : ".env.development",
+  path : `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
@@ -40,10 +40,10 @@ module.exports = {
       },
     },
     {
-      resolve : 'gatsby-plugin-snipcart',
+      resolve : `gatsby-plugin-snipcart`,
       options : {
         apiKey : process.env.SNIPCART_KEY,
-        autopop: true
+        autoPop: true,
       }
     }
   ],

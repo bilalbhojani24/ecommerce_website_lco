@@ -33,11 +33,11 @@ export class CourseCart extends Component {
                                             className="btn btn-warning snipcart-add-item"
                                             data-item-id={node.id}
                                             data-item-price={node.price}
-                                            data-item-url=""
+                                            data-item-url="https://learncodeonline.in"
                                             data-item-image={node.image.fixed.src}
                                             data-item-name={node.title}
                                             >
-                                                Join Now
+                                                Buy Now
                                             </button>
                                         </div>
                                     </div>
