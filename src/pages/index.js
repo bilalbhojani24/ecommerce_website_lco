@@ -32,6 +32,7 @@ export const query = graphql`
     courses:allContentfulCourses{
       edges{
         node {
+          id
           title
           price
           category
